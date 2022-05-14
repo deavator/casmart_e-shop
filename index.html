@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casmart - Biggest shopping center</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+    <!-- Reset CSS link -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- Castom CSS link -->
+    <link rel="stylesheet" href="./assets/css/c-style.css">
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom JS link -->
+    <script src="./assets/js/script.js" defer></script>
+    <!-- Ionicon Link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    
+    <header class="header" data-header>
+        <div class="container">
+
+            <div class="overlay" data-overlay></div>
+            
+            <!-- Search -->
+            <div class="header-search">
+                <input class="input-field" type="search" name="search" placeholder="Search Product...">
+                <button class="search-btn" aria-label="Search">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+
+            <a href="#" class="logo"><img src="./assets/images/logo.svg" alt="Casmart logo"></a>
+            <!-- Header action buttons -->
+            <div class="header-actions">
+                <!-- Sign in -->
+                <button class="header-action-btn">
+                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                    <p class="header-action-label">Sign in</p>
+                </button>
+                
+                <!-- Search -->
+                <button class="header-action-btn">
+                    <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    <p class="header-action-label">Search</p>
+                </button>
+                
+                <!-- Cart -->
+                <button class="header-action-btn">
+                    <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+                    <p class="header-action-label">Cart</p>
+                    <div class="btn-badge" area-hidden="true">3</div>
+                </button>
+                
+                <!-- Wishlist -->
+                <button class="header-action-btn">
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    <p class="header-action-label">Wishlist</p>
+                    <div class="btn-badge" area-hidden="true">2</div>
+                </button>
+
+
+            </div>
+            <!-- Navbar open button (BURGER)-->
+            <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navbar -->
+            <nav class="navbar">
+
+                <!-- Navbar TOP -->
+                <div class="navbar-top">
+                    <!-- Navbar Logo -->
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo.svg" alt="Casmart logo">
+                    </a>
+
+                    <!-- Navbar close button -->
+                    <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <!-- Navbar Menu -->
+                <ul class="navbar-list">
+                    <li class="navbar-item"><a href="#home" class="navbar-link">Home</a></li>
+                    <li class="navbar-item"><a href="#shop" class="navbar-link">Shop</a></li>
+                    <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
+                    <li class="navbar-item"><a href="#blog" class="navbar-link">Blog</a></li>
+                    <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+</body>
+</html>
