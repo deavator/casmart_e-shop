@@ -23,85 +23,187 @@
 
 </head>
 <body>
-    
     <header class="header" data-header>
+        <div class="overlay" data-overlay></div>
+        
         <div class="container">
-
-            <div class="overlay" data-overlay></div>
-            
-            <!-- Search -->
-            <div class="header-search">
-                <input class="input-field" type="search" name="search" placeholder="Search Product...">
-                <button class="search-btn" aria-label="Search">
-                    <ion-icon name="search-outline"></ion-icon>
-                </button>
-            </div>
-
-            <a href="#" class="logo"><img src="./assets/images/logo.svg" alt="Casmart logo"></a>
-            <!-- Header action buttons -->
-            <div class="header-actions">
-                <!-- Sign in -->
-                <button class="header-action-btn">
-                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-                    <p class="header-action-label">Sign in</p>
-                </button>
-                
-                <!-- Search -->
-                <button class="header-action-btn">
-                    <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-                    <p class="header-action-label">Search</p>
-                </button>
-                
-                <!-- Cart -->
-                <button class="header-action-btn">
-                    <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
-                    <p class="header-action-label">Cart</p>
-                    <div class="btn-badge" area-hidden="true">3</div>
-                </button>
-                
-                <!-- Wishlist -->
-                <button class="header-action-btn">
-                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-                    <p class="header-action-label">Wishlist</p>
-                    <div class="btn-badge" area-hidden="true">2</div>
-                </button>
-
-
-            </div>
-            <!-- Navbar open button (BURGER)-->
-            <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <!-- Navbar -->
-            <nav class="navbar">
-
-                <!-- Navbar TOP -->
-                <div class="navbar-top">
-                    <!-- Navbar Logo -->
-                    <a href="#" class="logo">
-                        <img src="./assets/images/logo.svg" alt="Casmart logo">
-                    </a>
-
-                    <!-- Navbar close button -->
-                    <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
-                        <ion-icon name="close-outline"></ion-icon>
+            <div class="header-bar"> 
+                <!-- Header Search -->
+                <div class="header-search">
+                    <input class="input-field" type="search" name="search" placeholder="Search Product...">
+                    <button class="search-btn" aria-label="Search">
+                        <ion-icon name="search-outline"></ion-icon>
                     </button>
                 </div>
 
-                <!-- Navbar Menu -->
-                <ul class="navbar-list">
-                    <li class="navbar-item"><a href="#home" class="navbar-link">Home</a></li>
-                    <li class="navbar-item"><a href="#shop" class="navbar-link">Shop</a></li>
-                    <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
-                    <li class="navbar-item"><a href="#blog" class="navbar-link">Blog</a></li>
-                    <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
-                </ul>
-            </nav>
+                <!-- Header Logo -->
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.svg" alt="Casmart logo">
+                </a>
 
+                <!-- Header action buttons -->
+                <div class="header-actions">
+                    <!-- Sign in -->
+                    <button class="header-action-btn">
+                        <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                        <p class="header-action-label">Sign in</p>
+                    </button>
+                    
+                    <!-- Search -->
+                    <button class="header-action-btn">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                        <p class="header-action-label">Search</p>
+                    </button>
+                    
+                    <!-- Cart -->
+                    <button class="header-action-btn">
+                        <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+                        <p class="header-action-label">Cart</p>
+                        <div class="btn-badge blue" area-hidden="true">3</div>
+                    </button>
+                    
+                    <!-- Wishlist -->
+                    <button class="header-action-btn">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                        <p class="header-action-label">Wishlist</p>
+                        <div class="btn-badge green" area-hidden="true">2</div>
+                    </button>
+
+
+                </div>
+
+                <!-- Navbar open button (BURGER)-->
+                <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Navbar -->
+                <nav class="navbar" data-navbar>
+
+                    <!-- Navbar TOP -->
+                    <div class="navbar-top">
+                        <!-- Navbar Logo -->
+                        <a href="#" class="logo">
+                            <img src="./assets/images/logo.svg" alt="Casmart logo">
+                        </a>
+
+                        <!-- Navbar close button -->
+                        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <!-- Navbar Menu -->
+                    <ul class="navbar-list">
+                        <li class="navbar-item"><a href="#home" class="navbar-link">Home</a></li>
+                        <li class="navbar-item"><a href="#service" class="navbar-link">Shop</a></li>
+                        <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
+                        <li class="navbar-item"><a href="#blog" class="navbar-link">Blog</a></li>
+                        <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
+                    </ul>
+
+                </nav>
+            </div>
         </div>
     </header>
+
+
+    <main class="main">
+        <article>
+            <!-- PROMO -->
+            <section class="promo" id="home">
+                <div class="container flex">
+                    <div class="promo__content">
+                        <p class="promo__subtitle">Fashion Everyday</p>
+                        <h2 class="h1 promo__title">Unrivalled Fashion House</h2>
+                        <button class="btn btn-primary">Shop Now</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICE -->
+            <section class="service" id="service">
+                <div class="container">
+                    <ul class="service__list">
+                        <li class="service__item">
+                            <img  class="service__item-icon" src="./assets/images/service-icon-1.svg" alt="Service icon">
+                            <div class="service__item-content">
+                                <p class="service__item-title">Free Shipping</p>
+                                <p class="service__item-text">On All Order Over $599</p>
+                            </div>
+                        </li>
+                        <li class="service__item">
+                            <img  class="service__item-icon" src="./assets/images/service-icon-2.svg" alt="Service icon">
+                            <div class="service__item-content">
+                                <p class="service__item-title">Easy Returns</p>
+                                <p class="service__item-text">30 Day Returns Policy</p>
+                            </div>    
+                        </li>
+                        <li class="service__item">
+                            <img  class="service__item-icon" src="./assets/images/service-icon-3.svg" alt="Service icon">
+                            <div class="service__item-content">
+                                <p class="service__item-title">Secure Payment</p>
+                                <p class="service__item-text">100% Secure Gaurantee</p>
+                            </div>    
+                        </li>
+                        <li class="service__item">
+                            <img  class="service__item-icon" src="./assets/images/service-icon-4.svg" alt="Service icon">
+                            <div class="service__item-content">
+                                <p class="service__item-title">Special Support</p>
+                                <p class="service__item-text">24/7 Dedicated Support</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- CATEGORY -->
+            <section class="section category">
+                <div class="container">
+                    <ul class="category__list">
+                        <li class="category__item">
+                            <figure class="category__banner w-100">
+                                <img src="./assets/images/category-1.jpg" alt="Sunglass & eye" loading="lazy">
+                            </figure>
+                            <a href="#" class="btn btn-secondary">Sunglass & Eye</a>
+                        </li>
+                        <li class="category__item">
+                            <figure class="category__banner w-100">
+                                <img src="./assets/images/category-2.jpg" alt="Active & outdoor" loading="lazy">
+                            </figure>
+                            <a href="#" class="btn btn-secondary">Active & Outdoor</a>
+                        </li>
+                        <li class="category__item">
+                            <figure class="category__banner">
+                                <img class="w-100" src="./assets/images/category-3.jpg" alt="Winter wear" loading="lazy">
+                            </figure>
+                            <a href="#" class="btn btn-secondary">Winter wear</a>
+                        </li>
+                        <li class="category__item">
+                            <figure class="category__banner">
+                                <img class="w-100" src="./assets/images/category-4.jpg" alt="Exclusive footwear" loading="lazy">
+                            </figure>
+                            <a href="#" class="btn btn-secondary">Exclusive footwear</a>
+                        </li>
+                        <li class="category__item">
+                            <figure class="category__banner">
+                                <img class="w-100" src="./assets/images/category-5.jpg" alt="Jewelry" loading="lazy">
+                            </figure>
+                            <a href="#" class="btn btn-secondary">Jewelry</a>
+                        </li>
+                        <li class="category__item">
+                            <figure class="category__banner">
+                                <img class="w-100" src="./assets/images/category-6.jpg" alt="Sports cap" loading="lazy">
+                            </figure>
+                            <a href="#" class="btn btn-secondary">Sports cap</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+
+    </main>
 </body>
 </html>
