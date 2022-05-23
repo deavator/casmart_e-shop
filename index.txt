@@ -1,44 +1,4 @@
 
-# CATEGORY
-
-alt = Sunglass & eye
-Sunglass & Eye
-
-alt = Active & outdoor
-Active & Outdoor
-
-alt = Winter wear
-Winter Wear
-
-alt = Exclusive footwear
-Exclusive Footwear
-
-alt = Jewelry
-Jewelry
-
-alt = Sports cap
-Sports Cap
-
-
-
-# PRODUCT
-
-Products of the week
-
-Best Seller
-Hot Collection
-Trendy
-New Arrival
-
-alt = Varsi Leather Bag
-
--25%
-
-aria-label = Quick view
-<ion-icon name="eye-outline"></ion-icon>
-
-<ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-Add to Cart
 
 alt = Add to Whishlist
 <ion-icon name="heart-outline"></ion-icon>

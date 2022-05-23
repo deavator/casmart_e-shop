@@ -113,54 +113,54 @@
     <main class="main">
         <article>
             <!-- PROMO -->
-            <section class="promo" id="home">
+            <div class="promo" id="home">
                 <div class="container flex">
                     <div class="promo__content">
-                        <p class="promo__subtitle">Fashion Everyday</p>
+                        <p class="h2 promo__subtitle">Fashion Everyday</p>
                         <h2 class="h1 promo__title">Unrivalled Fashion House</h2>
                         <button class="btn btn-primary">Shop Now</button>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <!-- SERVICE -->
-            <section class="service" id="service">
+            <div class="service" id="service">
                 <div class="container">
                     <ul class="service__list">
                         <li class="service__item">
                             <img  class="service__item-icon" src="./assets/images/service-icon-1.svg" alt="Service icon">
                             <div class="service__item-content">
-                                <p class="service__item-title">Free Shipping</p>
+                                <p class="h4 service__item-title">Free Shipping</p>
                                 <p class="service__item-text">On All Order Over $599</p>
                             </div>
                         </li>
                         <li class="service__item">
                             <img  class="service__item-icon" src="./assets/images/service-icon-2.svg" alt="Service icon">
                             <div class="service__item-content">
-                                <p class="service__item-title">Easy Returns</p>
+                                <p class="h4 service__item-title">Easy Returns</p>
                                 <p class="service__item-text">30 Day Returns Policy</p>
                             </div>    
                         </li>
                         <li class="service__item">
                             <img  class="service__item-icon" src="./assets/images/service-icon-3.svg" alt="Service icon">
                             <div class="service__item-content">
-                                <p class="service__item-title">Secure Payment</p>
+                                <p class="h4 service__item-title">Secure Payment</p>
                                 <p class="service__item-text">100% Secure Gaurantee</p>
                             </div>    
                         </li>
                         <li class="service__item">
                             <img  class="service__item-icon" src="./assets/images/service-icon-4.svg" alt="Service icon">
                             <div class="service__item-content">
-                                <p class="service__item-title">Special Support</p>
+                                <p class="h4 service__item-title">Special Support</p>
                                 <p class="service__item-text">24/7 Dedicated Support</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-            </section>
+            </div>
 
             <!-- CATEGORY -->
-            <section class="section category">
+            <div class="section category">
                 <div class="container">
                     <ul class="category__list">
                         <li class="category__item">
@@ -201,7 +201,50 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </div>
+
+            <!-- PRODUCT -->
+            <div class="section product">
+                <div class="container">
+                    <div class="section-title">
+                        <h2 class="h2 section-title">Products of the week</h2>
+                        <ul class="filter__list">
+                            <li class="filter__item"><a href="#" class="filter__link">Best Seller</a></li>
+                            <li class="filter__item"><a href="#" class="filter__link">Hot Collection</a></li>
+                            <li class="filter__item"><a href="#" class="filter__link">Trendy</a></li>
+                            <li class="filter__item"><a href="#" class="filter__link">New Arrival</a></li>
+                        </ul>
+                    </div>
+                    <div class="section-content">
+                        <ul class="product__list">
+                            <li class="product__item">
+                                <figure class="product__banner">
+                                    <a class="product__banner-link" href="#">
+                                        <img class="product__banner-image" src="./assets/images/product-1.jpg" loading="lazy" alt="Varsi Leather Bag">
+                                    </a>
+                                    <div class="product__badge red">-25%</div>
+                                    <div class="product__action" aria-label="Quick view">
+                                        <button class="product__action-btn">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+                                        <button class="product__action-btn cart-btn">
+                                            <ion-icon name="bag-handle-outline" aria-hidden="true">Add to Cart</ion-icon>
+                                        </button>
+                                        <button class="product__action-btn" aria-label="Add to Whishlist">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </figure>
+                                <a class="h4 product__item-title">Varsi Leather Bag</a>
+                                <data class="cart-price" value="48.75">&pound;48.75</data> 
+                                <data class="cart-price-crossed" value="65.00">&pound;65.00</data>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline">View All Products</button>
+                </div>
+            </div>
+
         </article>
 
     </main>
